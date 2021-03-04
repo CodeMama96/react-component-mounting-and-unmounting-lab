@@ -16,6 +16,16 @@ class Game extends React.Component {
     };
   }
 
+  componentDidMount (){
+    this.setCurrentTime()
+
+  }
+
+  componentWillUnmount(){
+    this.cleanUpInterval()
+  }
+
+
   // TODO: create a componentDidMount() which will set the current time
   
   setCurrentTime = () => {
